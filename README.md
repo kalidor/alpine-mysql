@@ -1,9 +1,11 @@
+__From wangxian__
+
 # alpine-mysql
 a docker image base on alpine with mysql
 
 ## build image (docker)
 ```
-docker build -t local/wangxian/alpine-mysql:latest .
+docker build -t alpine-mysql:latest .
 ```
 ## build image (docker-compose)
 ```
@@ -14,7 +16,7 @@ docker-compose build
 
 ## Usage (docker)
 ```
-docker run -it --name mysql -p 3306:3306 -v $(pwd):/app -e MYSQL_DATABASE=admin -e MYSQL_USER=tony -e MYSQL_PASSWORD=dpa\*12d -e MYSQL_ROOT_PASSWORD=111111 local/wangxian/alpine-mysql
+docker run -it --name mysql -p 3306:3306 -v $(pwd):/app -e MYSQL_DATABASE=admin -e MYSQL_USER=tony -e MYSQL_PASSWORD=dpa\*12d -e MYSQL_ROOT_PASSWORD=111111 alpine-mysql
 ```
 
 ## Usage (docker-compose)
